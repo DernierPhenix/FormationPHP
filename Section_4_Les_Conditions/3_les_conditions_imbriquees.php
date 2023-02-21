@@ -15,63 +15,75 @@
         comparaison, <br>
         on va utiliser la fonction var_dump().</p> -->
     <?php
-        echo "<strong>On définit une variable adhérent = true et un âge dans une autre variable = 25.<br></strong>";
-        echo "Si adherent = true & l'âge est <= à 21 ans alors reduction 50%. Sinon adherent = true & l'âge >=21 alors réduction de 20%.<br>";
-        echo "Sinon, vous n'êtes pas adhérent donc pas de réduction<br>";
 
-        $adherent = true;
-        $age = 25;
+    echo "<h3>Pour voir le programme de chaque cas (LE CODE), consulter le contenu de la page PHP</h3>";
 
-        if ($adherent) {
-            if ($age >= 21) {
-                echo "Vous êtes adhérent. Votre âge vous permet de bénéficier d'une réduction de 20%";
-            }else{
-                echo "Vous êtes adhérent. Votre âge vous permet de bénéficier d'une réduction de 50%";
-            }
-        }else{
+    echo "<h3>1er cas : </h3>";
 
-            echo "Vous n\'êtes pas adhérent, vous ne bénéficiez pas de réduction.";
+    echo "<strong>On définit une variable adhérent = true et un âge dans une autre variable = 25.<br></strong>
+            Si adhérent = true & l'âge est <= à 21 ans alors reduction 50%. Sinon adherent = true & l'âge >=21 alors réduction de 20%.<br>
+            Sinon, vous n'êtes pas adhérent donc pas de réduction<br>";
+
+    $adherent = true;
+    $age = 25;
+
+    if ($adherent) {
+        if ($age >= 21) {
+            echo "Vous êtes adhérent. Votre âge vous permet de bénéficier d'une réduction de 20%<br> ";
+        } else {
+            echo "Vous êtes adhérent. Votre âge vous permet de bénéficier d'une réduction de 50%<br>";
         }
+    } else {
+
+        echo "Vous n\'êtes pas adhérent, vous ne bénéficiez pas de réduction.";
+    }
 
     echo "<br><br>";
 
-        echo "<strong>On définit une variable adhérent = true et un âge dans une autre variable = 18.<br></strong>";
-        echo "Si adherent = true & l'âge est <= à 21 ans alors reduction 50%. Sinon adherent = true & l'âge >=21 alors réduction de 20%.<br>";
-        echo "Sinon, vous n'êtes pas adhérent donc pas de réduction<br>";
+    echo "<h3>2ème cas : </h3>";
 
-        $adherent = true;
-        $age = 18;
+    echo "<strong>On définit une variable adhérent = true et un âge dans une autre variable = 18.<br></strong>
+            Si adherent = true & l'âge est <= à 21 ans alors reduction 50%. Sinon adherent = true & l'âge >=21 alors réduction de 20%.<br>
+            Sinon, vous n'êtes pas adhérent donc pas de réduction<br>";
 
-        if ($adherent) {
-            if ($age >= 21) {
-                echo "Vous êtes adhérent. Votre âge vous permet de bénéficier d'une réduction de 20%";
-            }else{
-                echo "Vous êtes adhérent. Votre âge vous permet de bénéficier d'une réduction de 50%";
-            }
-        }else{
+    $adherent = true;
+    $age = 18;
 
-            echo "Vous n\'êtes pas adhérent, vous ne bénéficiez pas de réduction.";
+    if ($adherent) {
+        if ($age >= 21) {
+            echo "Vous êtes adhérent. Votre âge vous permet de bénéficier d'une réduction de 20%<br>";
+        } else {
+            echo "Vous êtes adhérent. Votre âge vous permet de bénéficier d'une réduction de 50%<br>";
         }
+    } else {
 
-        echo "<br><br>";
+        echo "Vous n\'êtes pas adhérent, vous ne bénéficiez pas de réduction.";
+    }
+    echo "<br><br>";
 
-        echo "<strong>On définit une variable adhérent = fasle et un âge dans une autre variable = 18.<br></strong>";
-        echo "Si adherent = true & l'âge est <= à 21 ans alors reduction 50%. Sinon adherent = true & l'âge >=21 alors réduction de 20%.<br>";
-        echo "Sinon, vous n'êtes pas adhérent donc pas de réduction<br>";
+    echo "<h3>3ème cas : </h3>";
 
-        $adherent = false;
-        $age = 18;
+    echo "<strong>On définit une variable adhérent = false et un âge dans une autre variable = 18.<br></strong>
+            Si adherent = true & l'âge est <= à 21 ans alors reduction 50%. <br>
+            Sinon adherent = true & l'âge >=21 alors réduction de 20%.<br>
+            Sinon, vous n'êtes pas adhérent donc pas de réduction<br>";
 
-        if ($adherent) {
-            if ($age >= 21) {
-                echo "Vous êtes adhérent. Votre âge vous permet de bénéficier d'une réduction de 20%";
-            }else{
-                echo "Vous êtes adhérent. Votre âge vous permet de bénéficier d'une réduction de 50%";
-            }
-        }else{
+    $adherent = false;
+    $age = 18;
 
-            echo "Vous n'êtes pas adhérent, vous ne bénéficiez pas de réduction.<br>";
+    if ($adherent) {
+        if ($age >= 21) {
+            echo "Vous êtes adhérent. Votre âge vous permet de bénéficier d'une réduction de 20%<br>";
+        } else {
+            echo "Vous êtes adhérent. Votre âge vous permet de bénéficier d'une réduction de 50%<br>";
         }
-        echo "<strong>Ici adherent étant définit à false, quelque soit l'âge nous aurons toujours la même réponse</strong>";
-        echo "<br><br>";
+    } else {
+
+        echo "Vous n'êtes pas adhérent, vous ne bénéficiez pas de réduction.<br>";
+    }
+    echo "<strong>Ici adherent étant définit à false, quelque soit l'âge nous aurons toujours la même réponse</strong><br><br>";
+
     ?>
+</body>
+
+</html>
